@@ -37,6 +37,9 @@
                                 <state key="normal" title="Beast">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="beastButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Scq-LY-wLz"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3XP-nR-Z1r">
                                 <rect key="frame" x="16" y="58" width="343" height="589"/>
@@ -71,6 +74,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="myTableView" destination="3XP-nR-Z1r" id="3L5-a9-Gi6"/>
+                        <outlet property="myTextField" destination="2v9-rz-hMx" id="gg3-RU-gSx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
